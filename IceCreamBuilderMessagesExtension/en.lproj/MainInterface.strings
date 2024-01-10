@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; accessibilityLabel = "Option"; ObjectID = "ApJ-89-yB6"; */
+"ApJ-89-yB6.accessibilityLabel" = "Option";
+
+/* Class = "UIButton"; configuration.title = "Option"; ObjectID = "ApJ-89-yB6"; */
+"ApJ-89-yB6.configuration.title" = "Option";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ApJ-89-yB6"; */
+"ApJ-89-yB6.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Prompt"; ObjectID = "UjH-XZ-NKN"; */
+"UjH-XZ-NKN.text" = "Prompt";

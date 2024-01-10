@@ -1,0 +1,11 @@
+
+{
+    categories: [{
+        label: "Body Parts",
+        sticker: "openartbody-sticker"
+    }, [
+        label: "Food",
+        sticker: "openart-food-sticker"
+    ]
+    ]
+}

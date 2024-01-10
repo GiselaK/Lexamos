@@ -1,0 +1,130 @@
+{
+  "A1": {
+    "body_parts": {
+      "vocabulary": ["nariz", "ojo", "boca", "oreja", "brazos", "piernas"],
+      "dependencies": []
+    },
+    "greetings": {
+      "vocabulary": ["hola", "buenos días", "buenas tardes", "¿cómo estás?", "adiós"],
+      "dependencies": []
+    },
+    "numbers": {
+      "vocabulary": ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez"],
+      "dependencies": []
+    },
+    "food_and_drinks": {
+      "vocabulary": ["agua", "pan", "fruta", "sopa", "pollo", "vino"],
+      "dependencies": ["body_parts"]
+    }
+  },
+  "A2": {
+    "body_parts": {
+      "vocabulary": ["dedos", "rodilla", "codo", "cuello", "espalda", "dedo del pie", "muñeca"],
+      "dependencies": ["A1_body_parts"]
+    },
+    "family": {
+      "vocabulary": ["madre", "padre", "hermano", "hermana", "hijo", "hija"],
+      "dependencies": []
+    },
+    "clothing": {
+      "vocabulary": ["camisa", "pantalón", "zapatos", "falda", "sombrero", "abrigo"],
+      "dependencies": []
+    },
+    "places_in_town": {
+      "vocabulary": ["hospital", "supermercado", "tienda", "biblioteca", "parque"],
+      "dependencies": []
+    },
+    "daily_activities": {
+      "vocabulary": ["desayunar", "almorzar", "cenar", "trabajar", "estudiar", "dormir"],
+      "dependencies": ["food_and_drinks", "body_parts"]
+    }
+  },
+  "B1": {
+    "body_parts": {
+      "vocabulary": ["pelo", "boca", "ojos", "dedos", "cuello"],
+      "dependencies": ["A2_body_parts"]
+    },
+    "weather": {
+      "vocabulary": ["sol", "nublado", "lluvia", "viento", "nieve"],
+      "dependencies": []
+    },
+    "health": {
+      "vocabulary": ["enfermedad", "consulta", "medicina", "síntomas", "doctor"],
+      "dependencies": [""]
+    },
+    "transport": {
+      "vocabulary": ["coche", "autobús", "tren", "bicicleta", "aeropuerto", "estación"],
+      "dependencies": []
+    },
+    "work": {
+      "vocabulary": ["empleo", "jefe", "compañero", "oficina", "reunión"],
+      "dependencies": []
+    }
+  },
+  "B2": {
+    "body_parts": {
+      "vocabulary": ["corazón", "pulmón", "cerebro", "riñón", "hueso", "células"],
+      "dependencies": ["B1_body_parts"]
+    },
+    "travel": {
+      "vocabulary": ["pasaporte", "vuelo", "hotel", "excursión", "guía"],
+      "dependencies": ["transport"]
+    },
+    "shopping": {
+      "vocabulary": ["comprar", "precio", "rebajas", "tarjeta de crédito", "mercado"],
+      "dependencies": []
+    },
+    "opinions": {
+      "vocabulary": ["opinión", "acuerdo", "desacuerdo", "preferir", "gustar"],
+      "dependencies": []
+    },
+    "events_and_festivals": {
+      "vocabulary": ["fiesta", "boda", "cumpleaños", "navidad", "festejar"],
+      "dependencies": []
+    }
+  },
+  "C1": {
+    "body_parts": {
+      "vocabulary": ["glándulas", "hígado", "intestino", "arteria", "nervios"],
+      "dependencies": ["B2_body_parts"]
+    },
+    "news_and_media": {
+      "vocabulary": ["noticia", "reportero", "entrevista", "información", "televisión"],
+      "dependencies": []
+    },
+    "culture_and_literature": {
+      "vocabulary": ["novela", "poesía", "teatro", "artista", "cultura"],
+      "dependencies": []
+    },
+    "education_and_learning": {
+      "vocabulary": ["universidad", "maestría", "investigación", "estudio", "tarea"],
+      "dependencies": ["opinions"]
+    },
+    "philosophy_and_sociology": {
+      "vocabulary": ["sociedad", "cultura", "moral", "filosofía", "comportamiento"],
+      "dependencies": []
+    }
+  },
+  "C2": {
+    "body_parts": {
+      "vocabulary": ["glóbulos rojos", "plasma", "células madre", "tejido", "órganos vitales"],
+      "dependencies": ["C1_body_parts"]
+    },
+    "debate_and_discussion": {
+      "vocabulary": ["argumento", "perspectiva", "convicción", "debate", "contradicción"],
+      "dependencies": ["opinions"]
+    },
+    "advanced_grammar": {
+      "vocabulary": ["subjuntivo", "condicional", "imperativo", "pasado perfecto", "futuro perfecto"],
+      "dependencies": ["work", "education_and_learning"]
+    },
+    "literary_analysis": {
+      "vocabulary": ["análisis", "metáfora", "simbolismo", "narrativa", "personajes"],
+      "dependencies": ["culture_and_literature"]
+    },
+    "current_affairs": {
+      "vocabulary": ["política", "economía", "derechos humanos", "medio ambiente", "globalización"],
+      "dependencies": []
+    }
+  }
+}

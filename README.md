@@ -13,7 +13,7 @@ The Xcode project consists of two targets:
 
 The iMessage Extension target uses a [`MSMessagesAppViewController`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller) subclass that presents child view controllers to either show the history of previously created ice cream sundaes or the collaboration interface to build a new sticker.
 
-When the iMessage Extension target is first initialized, the [`willBecomeActive(with:)`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/1649180-willbecomeactive) method of the `MessagesViewController` configures and displays the appropriate child view controller.
+When the iMessage Extension target is first initialized, the [`willBecomeActive(with:)`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willbecomeactive(with:)) method of the `MessagesViewController` configures and displays the appropriate child view controller.
 
 ## Use Presentation Styles
 
@@ -21,7 +21,7 @@ iMessage Extensions can be required to display in [several different presentatio
 
 When the Ice Cream Builder app icon is tapped from the Messages app drawer, the extension initially opens in [`compact`](https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/compact) mode where the initial view controller replaces the system keyboard. In this case, the `MessagesViewController` adds the `IceCreamsViewController` as a child view controller to display the history of previously created ice cream sundaes, along with an "Add" button to start creating a new one.
 
-The UI for creating a new ice cream sundae sticker benefits from a larger view controller so when the user taps the "Add" button the app requests the [`expanded`](https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/expanded) presentation style by calling [`requestPresentationStyle(_:)`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/1649184-requestpresentationstyle). The system then calls [`willTransition(to:)`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/1649178-willtransition) on the `MessagesViewController` where the sample code instantiates a view controller to either continue building the sundae, or to display the completed sundae.
+The UI for creating a new ice cream sundae sticker benefits from a larger view controller so when the user taps the "Add" button the app requests the [`expanded`](https://developer.apple.com/documentation/messages/msmessagesapppresentationstyle/expanded) presentation style by calling [`requestPresentationStyle(_:)`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/requestpresentationstyle(_:)). The system then calls [`willTransition(to:)`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/willtransition(to:)) on the `MessagesViewController` where the sample code instantiates a view controller to either continue building the sundae, or to display the completed sundae.
 
 ``` swift
 let controller: UIViewController
@@ -91,7 +91,7 @@ fileprivate func composeMessage(with iceCream: IceCream, caption: String, sessio
 ```
 [View in Source](x-source-tag://ComposeMessage)
 
-Once a message has been composed, it can be sent by accessing the [`activeConversation`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/1649188-activeconversation) property of the [`MSMessagesAppViewController`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller).
+Once a message has been composed, it can be sent by accessing the [`activeConversation`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller/activeconversation) property of the [`MSMessagesAppViewController`](https://developer.apple.com/documentation/messages/msmessagesappviewcontroller).
 
 ``` swift
 // Add the message to the conversation.
@@ -103,4 +103,4 @@ conversation.insert(message) { error in
 ```
 [View in Source](x-source-tag://InsertMessageInConversation)
 
-The [`insert(_:completionHandler:)`](https://developer.apple.com/documentation/messages/msconversation/2102270-insert) method used in this code will place the composed message into the conversation field, but will *not* send it immediately, requiring the user to still tap the send button. If you prefer to send the message immediately then use the [`send(_:completionHandler:)`](https://developer.apple.com/documentation/messages/msconversation/2909036-send) method instead. This method is available on iOS 11 and above.
+The [`insert(_:completionHandler:)`](https://developer.apple.com/documentation/messages/msconversation/insert(_:completionhandler:)-3g248) method used in this code will place the composed message into the conversation field, but will *not* send it immediately, requiring the user to still tap the send button. If you prefer to send the message immediately then use the [`send(_:completionHandler:)`](https://developer.apple.com/documentation/messages/msconversation/send(_:completionhandler:)-9krz) method instead. This method is available on iOS 11 and above.

@@ -1,5 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 A `UICollectionViewCell` subclass used to display an ice cream part in the `BuildIceCreamViewController`.
@@ -11,6 +11,11 @@ class IceCreamPartCell: UICollectionViewCell {
     
     static let reuseIdentifier = "IceCreamPartCell"
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var answer: UIButton!
 
+    weak var delegate: IceCreamPartCellDelegate?
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        delegate?.didTapAnswer(in: self)
+    }
 }

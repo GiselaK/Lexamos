@@ -1,5 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 A `UICollectionViewCell` subclass used to display an `IceCream` in the `IceCreamsViewController`.
@@ -13,6 +13,7 @@ class IceCreamCell: UICollectionViewCell {
     static let reuseIdentifier = "IceCreamCell"
     
     var representedIceCream: IceCream?
+    
     
     @IBOutlet weak var stickerView: MSStickerView!
     

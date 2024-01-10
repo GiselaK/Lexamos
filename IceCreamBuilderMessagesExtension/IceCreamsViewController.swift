@@ -1,5 +1,5 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
 A `UICollectionViewController` that displays the history of ice creams as well as a cell
@@ -7,6 +7,7 @@ A `UICollectionViewController` that displays the history of ice creams as well a
 */
 
 import UIKit
+
 
 class IceCreamsViewController: UICollectionViewController {
 
