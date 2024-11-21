@@ -14,7 +14,7 @@ class IceCreamCell: UICollectionViewCell {
     
     var representedIceCream: IceCream?
     
-    
-    @IBOutlet weak var stickerView: MSStickerView!
+    @IBOutlet weak var sticker: UIImageView!
+    @IBOutlet weak var name: UILabel!
     
 }

@@ -13,7 +13,7 @@
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="LexamosMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,53 +30,69 @@
         <!--Ice Creams View Controller-->
         <scene sceneID="lWR-9p-cKF">
             <objects>
-                <collectionViewController storyboardIdentifier="IceCreamsViewController" id="kmd-6I-dGt" customClass="IceCreamsViewController" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="IceCreamsViewController" id="kmd-6I-dGt" customClass="IceCreamsViewController" customModule="LexamosMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="Plx-tv-iB2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aZh-V0-qHL">
-                            <size key="itemSize" width="66" height="100"/>
+                            <size key="itemSize" width="153" height="137"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <inset key="sectionInset" minX="20" minY="10" maxX="20" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IceCreamAddCell" id="lNe-CO-kKe" customClass="IceCreamAddCell" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="66" height="100"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IceCreamCell" id="wDX-m7-k9L" customClass="IceCreamCell" customModule="LexamosMessagesExtension" customModuleProvider="target">
+                                <rect key="frame" x="20" y="10" width="100" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="66" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="138"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create" translatesAutoresizingMaskIntoConstraints="NO" id="SKM-96-Bs9">
-                                            <rect key="frame" x="0.0" y="0.0" width="66" height="100"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="SKM-96-Bs9" secondAttribute="trailing" id="6X6-hD-YEV"/>
-                                    <constraint firstAttribute="bottom" secondItem="SKM-96-Bs9" secondAttribute="bottom" id="KFX-4r-ItT"/>
-                                    <constraint firstItem="SKM-96-Bs9" firstAttribute="top" secondItem="lNe-CO-kKe" secondAttribute="top" id="m8B-Rj-hCg"/>
-                                    <constraint firstItem="SKM-96-Bs9" firstAttribute="leading" secondItem="lNe-CO-kKe" secondAttribute="leading" id="nQh-rY-lcV"/>
-                                </constraints>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IceCreamCell" id="wDX-m7-k9L" customClass="IceCreamCell" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target">
-                                <rect key="frame" x="106.5" y="10" width="66" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="66" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbW-VH-J9Q" customClass="MSStickerView">
-                                            <rect key="frame" x="0.0" y="0.0" width="66" height="100"/>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-IV-7Ax">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8qg-HI-HNl">
+                                                    <rect key="frame" x="0.0" y="100" width="100" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4C-FY-TG8">
+                                                    <rect key="frame" x="5" y="5" width="90" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" button="YES"/>
+                                            </accessibility>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                    <real key="value" value="0.40000000000000002"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                    <size key="value" width="0.0" height="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                 </view>
+                                <size key="customSize" width="100" height="138"/>
                                 <connections>
-                                    <outlet property="stickerView" destination="TbW-VH-J9Q" id="oGo-Ew-8EW"/>
+                                    <outlet property="name" destination="8qg-HI-HNl" id="zG8-Ao-CJf"/>
+                                    <outlet property="sticker" destination="K4C-FY-TG8" id="lWR-Cg-pDI"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -88,12 +104,12 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nvc-BF-gWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043.2" y="-116.04197901049476"/>
+            <point key="canvasLocation" x="1042.4000000000001" y="-116.49175412293854"/>
         </scene>
         <!--Build Ice Cream View Controller-->
         <scene sceneID="ywu-y3-Lf0">
             <objects>
-                <viewController storyboardIdentifier="BuildIceCreamViewController" id="xI2-aV-EH6" customClass="BuildIceCreamViewController" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BuildIceCreamViewController" id="xI2-aV-EH6" customClass="BuildIceCreamViewController" customModule="LexamosMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6E-jm-OCO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +126,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" reuseIdentifier="IceCreamPartCell" id="2By-Ga-jNY" customClass="IceCreamPartCell" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" reuseIdentifier="IceCreamPartCell" id="2By-Ga-jNY" customClass="IceCreamPartCell" customModule="LexamosMessagesExtension" customModuleProvider="target">
                                         <rect key="frame" x="18.5" y="0.0" width="254" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -180,7 +196,7 @@
         <!--Completed Ice Cream View Controller-->
         <scene sceneID="MkK-rh-rzL">
             <objects>
-                <viewController storyboardIdentifier="CompletedIceCreamViewController" id="k2c-ft-449" customClass="CompletedIceCreamViewController" customModule="IceCreamBuilderMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompletedIceCreamViewController" id="k2c-ft-449" customClass="CompletedIceCreamViewController" customModule="LexamosMessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rpr-Yw-YGU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,13 +225,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="create" width="66" height="100"/>
         <image name="shuffle.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
