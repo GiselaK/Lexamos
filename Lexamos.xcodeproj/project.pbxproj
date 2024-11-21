@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F462D5F2CEED0F30034BBFF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D5E2CEED0F30034BBFF /* Game.swift */; };
+		7F462D602CEED0F30034BBFF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D5E2CEED0F30034BBFF /* Game.swift */; };
+		7F462D622CEEE0240034BBFF /* openart-memory-sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F462D612CEEE0230034BBFF /* openart-memory-sticker.png */; };
+		7F462D632CEEE0240034BBFF /* openart-memory-sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F462D612CEEE0230034BBFF /* openart-memory-sticker.png */; };
+		7F462D652CEEE2DA0034BBFF /* openart-madlibs-sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F462D642CEEE2DA0034BBFF /* openart-madlibs-sticker.png */; };
+		7F462D662CEEE2DA0034BBFF /* openart-madlibs-sticker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F462D642CEEE2DA0034BBFF /* openart-madlibs-sticker.png */; };
 		7F9E74E12CED7E9500DA49E3 /* Klipy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E74E02CED7E9500DA49E3 /* Klipy.swift */; };
 		7F9E74E42CED846100DA49E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E74E32CED846100DA49E3 /* Kingfisher */; };
 		7F9E74F42CED92AE00DA49E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E74F32CED92AE00DA49E3 /* Kingfisher */; };
@@ -138,6 +144,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F462D5E2CEED0F30034BBFF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7F462D612CEEE0230034BBFF /* openart-memory-sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "openart-memory-sticker.png"; sourceTree = "<group>"; };
+		7F462D642CEEE2DA0034BBFF /* openart-madlibs-sticker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "openart-madlibs-sticker.png"; sourceTree = "<group>"; };
 		7F9E74E02CED7E9500DA49E3 /* Klipy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Klipy.swift; sourceTree = "<group>"; };
 		7F9E75032CEDEDE100DA49E3 /* curriculum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = curriculum.json; sourceTree = "<group>"; };
 		7F9E75092CEE060000DA49E3 /* spanish_curriculum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spanish_curriculum.json; sourceTree = "<group>"; };
@@ -262,6 +271,8 @@
 		7F9E75172CEEAE2C00DA49E3 /* LessonStickers */ = {
 			isa = PBXGroup;
 			children = (
+				7F462D642CEEE2DA0034BBFF /* openart-madlibs-sticker.png */,
+				7F462D612CEEE0230034BBFF /* openart-memory-sticker.png */,
 				7F9E75512CEEB33100DA49E3 /* openart-body-sticker.jpg */,
 				7F9E75502CEEB33100DA49E3 /* openart-clothes-sticker.jpg */,
 				7F9E75542CEEB33100DA49E3 /* openart-communication-sticker.jpg */,
@@ -293,7 +304,6 @@
 				B5CE99031CF5AF210031942E /* README.md */,
 				B52828AB1CD1724C009CD776 /* IceCreamBuilder */,
 				B55F96261CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */,
-				B52828C31CD17260009CD776 /* Frameworks */,
 				B52828AA1CD1724C009CD776 /* Products */,
 				A48773DCBF3B803EA834F806 /* Configuration */,
 				79C5A4EFB9BB4C31D9D12841 /* LICENSE */,
@@ -328,6 +338,7 @@
 				B52828C41CD17260009CD776 /* Messages.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B55F96261CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */ = {
@@ -344,6 +355,7 @@
 				B55F963D1CFF82E100B33E33 /* IceCreamPartCollectionViewLayout.swift */,
 				B55F964E1CFF9FB800B33E33 /* CompletedIceCreamViewController.swift */,
 				B55F963F1CFF82E100B33E33 /* IceCreamView.swift */,
+				B52828C31CD17260009CD776 /* Frameworks */,
 				B55F964D1CFF830700B33E33 /* Model */,
 				B5E0A53C1D0103F0006A77D2 /* StickerPartImages */,
 				B55F96291CFF829D00B33E33 /* MainInterface.storyboard */,
@@ -363,6 +375,7 @@
 				B55F963B1CFF82E100B33E33 /* IceCreamPart.swift */,
 				B55F96401CFF82E100B33E33 /* QueryItemRepresentable.swift */,
 				B5B1E9F11D02717700BD5715 /* IceCreamStickerCache.swift */,
+				7F462D5E2CEED0F30034BBFF /* Game.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -540,7 +553,9 @@
 				7F9E756D2CEEB33200DA49E3 /* openart-shopping-sticker.jpg in Resources */,
 				7F9E750A2CEE060000DA49E3 /* spanish_curriculum.json in Resources */,
 				7F9E755B2CEEB33200DA49E3 /* openart-health-sticker.jpg in Resources */,
+				7F462D652CEEE2DA0034BBFF /* openart-madlibs-sticker.png in Resources */,
 				7F9E75612CEEB33200DA49E3 /* openart-travel-sticker.jpg in Resources */,
+				7F462D622CEEE0240034BBFF /* openart-memory-sticker.png in Resources */,
 				7F9E75692CEEB33200DA49E3 /* openart-family-sticker.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +586,7 @@
 				7F9E756A2CEEB33200DA49E3 /* openart-family-sticker.jpg in Resources */,
 				7F9E755C2CEEB33200DA49E3 /* openart-health-sticker.jpg in Resources */,
 				B5E0A57F1D01079C006A77D2 /* topping08_sticker.png in Resources */,
+				7F462D662CEEE2DA0034BBFF /* openart-madlibs-sticker.png in Resources */,
 				B5E0A57B1D01079C006A77D2 /* topping04_sticker.png in Resources */,
 				B5E0A56E1D01079C006A77D2 /* scoops02_sticker.png in Resources */,
 				7F9E75052CEDEDE100DA49E3 /* curriculum.json in Resources */,
@@ -583,6 +599,7 @@
 				7F9E756C2CEEB33200DA49E3 /* openart-numbers-sticker.jpg in Resources */,
 				B5E0A5831D01079C006A77D2 /* topping12_sticker.png in Resources */,
 				B55F962B1CFF829D00B33E33 /* MainInterface.storyboard in Resources */,
+				7F462D632CEEE0240034BBFF /* openart-memory-sticker.png in Resources */,
 				B5E0A5741D01079C006A77D2 /* scoops08_sticker.png in Resources */,
 				B5A2FBA71D048F7800EB0205 /* sticker_placeholder.png in Resources */,
 				B5E0A5781D01079C006A77D2 /* topping01_sticker.png in Resources */,
@@ -602,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9E75152CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift in Sources */,
+				7F462D5F2CEED0F30034BBFF /* Game.swift in Sources */,
 				B52828AF1CD1724C009CD776 /* ViewController.swift in Sources */,
 				B52828AD1CD1724C009CD776 /* AppDelegate.swift in Sources */,
 				7F9E75122CEE148B00DA49E3 /* DeepLTranslate.swift in Sources */,
@@ -626,6 +644,7 @@
 				B55F964C1CFF82E100B33E33 /* QueryItemRepresentable.swift in Sources */,
 				B55F96451CFF82E100B33E33 /* IceCreamHistory.swift in Sources */,
 				B55F96471CFF82E100B33E33 /* IceCreamPart.swift in Sources */,
+				7F462D602CEED0F30034BBFF /* Game.swift in Sources */,
 				B55F96441CFF82E100B33E33 /* IceCreamCell.swift in Sources */,
 				B55F96481CFF82E100B33E33 /* IceCreamPartCell.swift in Sources */,
 				B55F96421CFF82E100B33E33 /* IceCream.swift in Sources */,

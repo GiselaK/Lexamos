@@ -24,7 +24,7 @@ class IceCreamsViewController: UICollectionViewController {
     
     weak var delegate: IceCreamsViewControllerDelegate?
 
-    private let items: [CollectionViewItem]
+    private let items: [Game]
     
     private let stickerCache = IceCreamStickerCache.cache
     
@@ -32,11 +32,19 @@ class IceCreamsViewController: UICollectionViewController {
     
     required init?(coder aDecoder: NSCoder) {
         // Map the previously completed ice creams to an array of `CollectionViewItem`s.
-        let reversedHistory = IceCreamHistory.load().reversed()
-        var items: [CollectionViewItem] = reversedHistory.map { .iceCream($0) }
+//        let reversedHistory = IceCreamHistory.load().reversed()
+
+        let items: [Game] = [
+            Game(sticker: UIImage(named: "openart-memory-sticker")!, name: "Memory", comingSoon: false),
+            /*Game(sticker: UIImage(named: "openart-madlibs-sticker")!, name: "MadLibs", comingSoon: true)*/
+        ]
         
+//        self.items = [
+//            Game(image: UIImage(named: "openart-memory-sticker")!, name: "Memory"), Game(image: UIImage(named: "openart-memory-sticker")!, name: "Coming Soon!")
+//        ]
+
         // Add `CollectionViewItem` that the user can tap to start building a new ice cream.
-        items.insert(.create, at: 0)
+//        items.insert(.create, at: 0)
         
         self.items = items
         super.init(coder: aDecoder)
@@ -49,16 +57,24 @@ class IceCreamsViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = items[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IceCreamCell.reuseIdentifier, for: indexPath) as! IceCreamCell
+        // Fetch the corresponding IceCream object
+        let item = items[indexPath.item]
         
-        // The item's type determines which type of cell to return.
-        switch item {
-        case .iceCream(let iceCream):
-            return dequeueIceCreamCell(for: iceCream, at: indexPath)
-            
-        case .create:
-            return dequeueIceCreamAddCell(at: indexPath)
-        }
+        // Configure the cell
+        cell.sticker.image = item.sticker
+        cell.name.text = item.name
+        
+        return cell
+        
+//        // The item's type determines which type of cell to return.
+//        switch item {
+//        case .iceCream(let iceCream):
+//            return dequeueIceCreamCell(for: iceCream, at: indexPath)
+//            
+//        case .create:
+//            return dequeueIceCreamAddCell(at: indexPath)
+//        }
     }
 
     // MARK: UICollectionViewDelegate
@@ -66,13 +82,13 @@ class IceCreamsViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = items[indexPath.row]
         
-        switch item {
-        case .create:
-            delegate?.iceCreamsViewControllerDidSelectAdd(self)
-            
-        default:
-            break
-        }
+//        switch item {
+//        case .create:
+//            delegate?.iceCreamsViewControllerDidSelectAdd(self)
+//            
+//        default:
+//            break
+//        }
     }
     
     // MARK: Convenience
@@ -85,16 +101,16 @@ class IceCreamsViewController: UICollectionViewController {
         
         // Use a placeholder sticker while we fetch the real one from the cache.
         let cache = IceCreamStickerCache.cache
-        cell.stickerView.sticker = cache.placeholderSticker
-        
-        // Fetch the sticker for the ice cream from the cache.
-        cache.sticker(for: iceCream) { sticker in
-            OperationQueue.main.addOperation {
-                // If the cell is still showing the same ice cream, update its sticker view.
-                guard cell.representedIceCream == iceCream else { return }
-                cell.stickerView.sticker = sticker
-            }
-        }
+//        cell.stickerView.sticker = cache.placeholderSticker
+//        
+//        // Fetch the sticker for the ice cream from the cache.
+//        cache.sticker(for: iceCream) { sticker in
+//            OperationQueue.main.addOperation {
+//                // If the cell is still showing the same ice cream, update its sticker view.
+//                guard cell.representedIceCream == iceCream else { return }
+//                cell.stickerView.sticker = sticker
+//            }
+//        }
         
         return cell
     }
