@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F37A9EE2CEFC88F00B2BA6B /* FlashcardsGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F37A9ED2CEFC88F00B2BA6B /* FlashcardsGameViewController.swift */; };
+		7F37A9F72CEFD1C200B2BA6B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55F96291CFF829D00B33E33 /* MainInterface.storyboard */; };
 		7F462D5F2CEED0F30034BBFF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D5E2CEED0F30034BBFF /* Game.swift */; };
 		7F462D602CEED0F30034BBFF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D5E2CEED0F30034BBFF /* Game.swift */; };
-		7F462D6B2CEF2FF40034BBFF /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D6A2CEF2FF40034BBFF /* LessonCell.swift */; };
 		7F462D6C2CEF2FF40034BBFF /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D6A2CEF2FF40034BBFF /* LessonCell.swift */; };
-		7F462D6E2CEF31140034BBFF /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D6D2CEF31140034BBFF /* LessonsViewController.swift */; };
 		7F462D6F2CEF31140034BBFF /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D6D2CEF31140034BBFF /* LessonsViewController.swift */; };
 		7F462D722CEF31A90034BBFF /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D712CEF31A90034BBFF /* Lesson.swift */; };
 		7F462D732CEF31A90034BBFF /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F462D712CEF31A90034BBFF /* Lesson.swift */; };
@@ -51,7 +51,6 @@
 		7F9E750D2CEE0B4700DA49E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E750C2CEE0B4700DA49E3 /* Alamofire */; };
 		7F9E75122CEE148B00DA49E3 /* DeepLTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75112CEE148B00DA49E3 /* DeepLTranslate.swift */; };
 		7F9E75132CEE148B00DA49E3 /* DeepLTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75112CEE148B00DA49E3 /* DeepLTranslate.swift */; };
-		7F9E75152CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75142CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift */; };
 		7F9E75162CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75142CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift */; };
 		B52828AD1CD1724C009CD776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52828AC1CD1724C009CD776 /* AppDelegate.swift */; };
 		B52828AF1CD1724C009CD776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52828AE1CD1724C009CD776 /* ViewController.swift */; };
@@ -62,7 +61,6 @@
 		B55F962B1CFF829D00B33E33 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55F96291CFF829D00B33E33 /* MainInterface.storyboard */; };
 		B55F962D1CFF829D00B33E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F962C1CFF829D00B33E33 /* Assets.xcassets */; };
 		B55F96311CFF829D00B33E33 /* LexamosMessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B55F96241CFF829D00B33E33 /* LexamosMessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B55F96411CFF82E100B33E33 /* BuildIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96351CFF82E100B33E33 /* BuildIceCreamViewController.swift */; };
 		B55F96421CFF82E100B33E33 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96361CFF82E100B33E33 /* IceCream.swift */; };
 		B55F96431CFF82E100B33E33 /* IceCream+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96371CFF82E100B33E33 /* IceCream+Image.swift */; };
 		B55F96441CFF82E100B33E33 /* IceCreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96381CFF82E100B33E33 /* IceCreamCell.swift */; };
@@ -149,6 +147,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F37A9ED2CEFC88F00B2BA6B /* FlashcardsGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsGameViewController.swift; sourceTree = "<group>"; };
 		7F462D5E2CEED0F30034BBFF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7F462D6A2CEF2FF40034BBFF /* LessonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCell.swift; sourceTree = "<group>"; };
 		7F462D6D2CEF31140034BBFF /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
@@ -185,7 +184,6 @@
 		B55F962A1CFF829D00B33E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B55F962C1CFF829D00B33E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55F962E1CFF829D00B33E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B55F96351CFF82E100B33E33 /* BuildIceCreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildIceCreamViewController.swift; sourceTree = "<group>"; };
 		B55F96361CFF82E100B33E33 /* IceCream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCream.swift; sourceTree = "<group>"; };
 		B55F96371CFF82E100B33E33 /* IceCream+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IceCream+Image.swift"; sourceTree = "<group>"; };
 		B55F96381CFF82E100B33E33 /* IceCreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamCell.swift; sourceTree = "<group>"; };
@@ -355,7 +353,7 @@
 				B55F96271CFF829D00B33E33 /* MessagesViewController.swift */,
 				B55F963E1CFF82E100B33E33 /* IceCreamsViewController.swift */,
 				B55F96381CFF82E100B33E33 /* IceCreamCell.swift */,
-				B55F96351CFF82E100B33E33 /* BuildIceCreamViewController.swift */,
+				7F37A9ED2CEFC88F00B2BA6B /* FlashcardsGameViewController.swift */,
 				7F9E75142CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift */,
 				B55F963C1CFF82E100B33E33 /* IceCreamPartCell.swift */,
 				B55F963D1CFF82E100B33E33 /* IceCreamPartCollectionViewLayout.swift */,
@@ -562,6 +560,7 @@
 				7F462D8D2CEF429D0034BBFF /* openart-clothes-sticker.png in Resources */,
 				7F462D812CEF429D0034BBFF /* openart-food-sticker.png in Resources */,
 				7F462D972CEF429D0034BBFF /* openart-health-sticker.png in Resources */,
+				7F37A9F72CEFD1C200B2BA6B /* MainInterface.storyboard in Resources */,
 				B52828B21CD1724C009CD776 /* Main.storyboard in Resources */,
 				7F462D8F2CEF429D0034BBFF /* openart-numbers-sticker.jpg in Resources */,
 				7F9E750A2CEE060000DA49E3 /* spanish_curriculum.json in Resources */,
@@ -627,9 +626,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F462D6E2CEF31140034BBFF /* LessonsViewController.swift in Sources */,
-				7F9E75152CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift in Sources */,
-				7F462D6B2CEF2FF40034BBFF /* LessonCell.swift in Sources */,
 				7F462D722CEF31A90034BBFF /* Lesson.swift in Sources */,
 				7F462D5F2CEED0F30034BBFF /* Game.swift in Sources */,
 				B52828AF1CD1724C009CD776 /* ViewController.swift in Sources */,
@@ -644,7 +640,6 @@
 			files = (
 				7F9E75162CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift in Sources */,
 				B55F964A1CFF82E100B33E33 /* IceCreamsViewController.swift in Sources */,
-				B55F96411CFF82E100B33E33 /* BuildIceCreamViewController.swift in Sources */,
 				B55F96281CFF829D00B33E33 /* MessagesViewController.swift in Sources */,
 				B55F96431CFF82E100B33E33 /* IceCream+Image.swift in Sources */,
 				7F462D6C2CEF2FF40034BBFF /* LessonCell.swift in Sources */,
@@ -663,6 +658,7 @@
 				B55F96481CFF82E100B33E33 /* IceCreamPartCell.swift in Sources */,
 				B55F96421CFF82E100B33E33 /* IceCream.swift in Sources */,
 				7F9E74E12CED7E9500DA49E3 /* Klipy.swift in Sources */,
+				7F37A9EE2CEFC88F00B2BA6B /* FlashcardsGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

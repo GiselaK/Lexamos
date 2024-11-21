@@ -15,7 +15,7 @@ class KlipyService {
     
     func fetchGIFs(query: String, completion: @escaping (Result<[String], Error>) -> Void) {
         let baseURL = "https://api.klipy.co/api/v1/\(apiKey)" // Hypothetical URL
-        let url = "\(baseURL)/gifs/search"
+        let url = "\(baseURL)/stickers/search"
         let parameters: [String: Any] = [
             "customer_id": "lex", //Update to user id?
             "q": query
