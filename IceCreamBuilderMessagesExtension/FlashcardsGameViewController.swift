@@ -33,14 +33,14 @@ class FlashcardsGameViewController: UIViewController, IceCreamPartCellDelegate {
     private var counter: Int = 0
     private var prompt: String?
     private var es_curriculum: [String: [String]] = [
-        "person": [
+        "body_parts": [
             "pelo", "ojo", "nariz", "cabeza", "cara", "brazo", "mano", "dedo", "pierna", "pie",
             "oído", "muela", "garganta", "estómago", "espalda"
         ]
     ]
     
     private var en_curriculum: [String: [String]] = [
-        "person": [
+        "body_parts": [
             "hair", "eye", "nose", "head", "face", "arm", "hand", "finger", "leg", "foot",
             "ear", "muela", "throat", "stomach", "back"
         ]

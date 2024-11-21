@@ -22,7 +22,7 @@ class LessonsViewController: UICollectionViewController {
 
         let items: [Lesson] = [
             Lesson(sticker: UIImage(named: "openart-body-sticker")!, name: "Body Parts",
-                   key: "person", comingSoon: false),
+                   key: "body_parts", comingSoon: false),
             Lesson(sticker: UIImage(named: "openart-clothes-sticker")!, name: "Clothes", key: "clothes", comingSoon: false),
             Lesson(sticker: UIImage(named: "openart-communication-sticker")!, name: "Greetings", key: "greetings", comingSoon: false),
             Lesson(sticker: UIImage(named: "openart-shopping-sticker")!, name: "Shopping", key: "shopping", comingSoon: false),
