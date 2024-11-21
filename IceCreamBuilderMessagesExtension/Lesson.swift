@@ -12,5 +12,6 @@ import UIKit
 struct Lesson {
     let sticker: UIImage
     let name: String
+    let key: String
     let comingSoon: Bool
 }

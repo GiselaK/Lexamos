@@ -16,7 +16,7 @@ class IceCreamCell: UICollectionViewCell {
     var selectGame: (() -> Void)?
     @IBOutlet weak var sticker: UIImageView!
     @IBOutlet weak var name: UILabel!
-    @IBAction func buttonTapped(_ sender: UIButton) {
+    @IBAction func gameSelected(_ sender: UIButton) {
         selectGame?()
     }
 }

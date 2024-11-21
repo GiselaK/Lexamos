@@ -9,39 +9,32 @@
 import Foundation
 import UIKit
 
+protocol LessonsViewControllerDelegate: AnyObject {
+    func didSelectLesson(_ lesson: Lesson)
+}
 
 class LessonsViewController: UICollectionViewController {
+     var delegate: LessonsViewControllerDelegate?
+//    TODO: Issue#27 Prefer weak over strong delegates
     private let items: [Lesson]
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Additional setup if needed
-    }
+    
     required init?(coder aDecoder: NSCoder) {
-        // Map the previously completed ice creams to an array of `CollectionViewItem`s.
-//        let reversedHistory = IceCreamHistory.load().reversed()
 
         let items: [Lesson] = [
-            Lesson(sticker: UIImage(named: "openart-body-sticker")!, name: "Body Parts", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-clothes-sticker")!, name: "Clothes", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-communication-sticker")!, name: "Greetings", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-shopping-sticker")!, name: "Shopping", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-transportation-sticker")!, name: "Transportation", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-travel-sticker")!, name: "Travel", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-weather-sticker")!, name: "Weather", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-health-sticker")!, name: "Health", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-food-sticker")!, name: "Food", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-numbers-sticker")!, name: "Numbers", comingSoon: false),
-            Lesson(sticker: UIImage(named: "openart-family-sticker")!, name: "Family", comingSoon: false)
+            Lesson(sticker: UIImage(named: "openart-body-sticker")!, name: "Body Parts",
+                   key: "person", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-clothes-sticker")!, name: "Clothes", key: "clothes", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-communication-sticker")!, name: "Greetings", key: "greetings", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-shopping-sticker")!, name: "Shopping", key: "shopping", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-transportation-sticker")!, name: "Transportation", key: "transportation", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-travel-sticker")!, name: "Travel", key: "travel", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-weather-sticker")!, name: "Weather", key: "weather", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-health-sticker")!, name: "Health", key: "health", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-food-sticker")!, name: "Food", key: "food", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-numbers-sticker")!, name: "Numbers", key: "numbers", comingSoon: false),
+            Lesson(sticker: UIImage(named: "openart-family-sticker")!, name: "Family", key: "family", comingSoon: false)
             /*Game(sticker: UIImage(named: "openart-madlibs-sticker")!, name: "MadLibs", comingSoon: true)*/
         ]
-        
-//        self.items = [
-//            Game(image: UIImage(named: "openart-memory-sticker")!, name: "Memory"), Game(image: UIImage(named: "openart-memory-sticker")!, name: "Coming Soon!")
-//        ]
-
-        // Add `CollectionViewItem` that the user can tap to start building a new ice cream.
-//        items.insert(.create, at: 0)
         
         self.items = items
         super.init(coder: aDecoder)
@@ -51,27 +44,29 @@ class LessonsViewController: UICollectionViewController {
         return items.count
     }
     
+    private func navigateToGameScreen(for lesson: Lesson) {
+        print("Navigating to game screen with lesson: \(lesson.key)")
+        
+        let storyboard = UIStoryboard(name: "MainInterface", bundle: nil)
+        guard let lessonsVC = storyboard.instantiateViewController(withIdentifier: "FlashcardsGameViewController") as? FlashcardsGameViewController else {
+            fatalError("Controllers not found")
+        }
+        
+        lessonsVC.lesson = lesson
+        self.present(lessonsVC, animated: true, completion: nil)
+    }
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LessonCell.reuseIdentifier, for: indexPath) as! LessonCell
-        // Fetch the corresponding IceCream object
+
         let item = items[indexPath.item]
         
-        // Configure the cell
         cell.sticker.image = item.sticker
         cell.name.text = item.name
-//        cell.selectGame = { [weak self] in
-//            self?.navigateToMemoryScreen(for: item)
-//        }
-//        
+        cell.key = item.key
+        cell.selectLesson = { [weak self] in
+            self?.navigateToGameScreen(for: item)
+        }
         return cell
-        
-//        // The item's type determines which type of cell to return.
-//        switch item {
-//        case .iceCream(let iceCream):
-//            return dequeueIceCreamCell(for: iceCream, at: indexPath)
-//
-//        case .create:
-//            return dequeueIceCreamAddCell(at: indexPath)
-//        }
     }
 }

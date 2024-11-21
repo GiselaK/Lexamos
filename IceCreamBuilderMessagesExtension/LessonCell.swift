@@ -23,10 +23,12 @@ class LessonCell: UICollectionViewCell {
     
 //    var representedIceCream: IceCream?
     var selectLesson: (() -> Void)?
+    var key: String!
     @IBOutlet weak var sticker: UIImageView!
     @IBOutlet weak var name: UILabel!
-    @IBAction func buttonTapped(_ sender: UIButton) {
+    @IBAction func lessonSelected(_ sender: UIButton) {
         selectLesson?()
     }
+    
 }
 
