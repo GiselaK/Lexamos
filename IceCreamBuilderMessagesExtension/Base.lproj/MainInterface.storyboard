@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="AiQ-fV-a95"/>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82070396850000005" green="0.89645695830000005" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -34,7 +34,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="N3J-PL-Rd3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.96440416569999998" green="0.88577216859999997" blue="0.91764992479999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.82070396850000005" green="0.89645695830000005" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="1" sectionInsetReference="layoutMargins" id="sbp-VR-6Or">
                             <size key="itemSize" width="140" height="140"/>
                             <size key="estimatedItemSize" width="140" height="140"/>
@@ -125,7 +125,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="Plx-tv-iB2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96440416569999998" green="0.88577216859999997" blue="0.91764992479999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.82070396850000005" green="0.89645695830000005" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aZh-V0-qHL">
                             <size key="itemSize" width="153" height="137"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -214,13 +214,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" dataMode="prototypes" id="RkQ-sR-To3">
-                                <rect key="frame" x="45" y="262" width="291" height="374"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCX-10-igP">
+                                <rect key="frame" x="47" y="36" width="286" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUE-mp-rpv">
+                                <rect key="frame" x="124" y="219" width="126" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Swap GIF" cornerStyle="large">
+                                    <imageReference key="image" image="shuffle.circle" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapRefresh:" destination="xI2-aV-EH6" eventType="touchDown" id="3w1-nl-uBn"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" dataMode="prototypes" id="RkQ-sR-To3">
+                                <rect key="frame" x="42" y="316" width="291" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82070396850000005" green="0.89645695830000005" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Krx-RZ-bhA">
-                                    <size key="itemSize" width="254" height="47"/>
-                                    <size key="estimatedItemSize" width="284" height="100"/>
+                                    <size key="itemSize" width="254" height="50"/>
+                                    <size key="estimatedItemSize" width="284" height="65"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -234,7 +250,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ApJ-89-yB6" userLabel="Example Text" colorLabel="IBBuiltInLabel-Yellow">
-                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="47"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration" label="Example Text">
                                                         <accessibilityTraits key="traits" button="YES"/>
@@ -245,7 +261,7 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="filled" title="Example Text  " titleAlignment="automatic">
                                                         <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                                        <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                                                        <color key="baseBackgroundColor" systemColor="systemCyanColor"/>
                                                     </buttonConfiguration>
                                                     <connections>
                                                         <action selector="buttonTapped:" destination="2By-Ga-jNY" eventType="touchDown" id="3h9-ce-RSY"/>
@@ -263,24 +279,9 @@
                                     <outlet property="dataSource" destination="xI2-aV-EH6" id="ty6-fk-2BW"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCX-10-igP">
-                                <rect key="frame" x="47" y="36" width="286" height="168"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUE-mp-rpv">
-                                <rect key="frame" x="124" y="219" width="126" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Swap GIF" cornerStyle="large">
-                                    <imageReference key="image" image="shuffle.circle" catalog="system" symbolScale="large"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapRefresh:" destination="xI2-aV-EH6" eventType="touchDown" id="3w1-nl-uBn"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bzv-v2-qhS"/>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.88235294119999996" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82070396850000005" green="0.89645695830000005" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.81960784313725488" green="0.094117647058823528" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
@@ -307,7 +308,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vtt-z6-Oek"/>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.88235294119999996" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82070396850000005" green="0.89645695830000005" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ak9-Kd-Mdj" firstAttribute="top" secondItem="vtt-z6-Oek" secondAttribute="top" constant="50" id="5u9-mc-C1i"/>
                             <constraint firstItem="ak9-Kd-Mdj" firstAttribute="leading" secondItem="Rpr-Yw-YGU" secondAttribute="leadingMargin" constant="50" id="Jz7-e4-nMw"/>
@@ -329,8 +330,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
