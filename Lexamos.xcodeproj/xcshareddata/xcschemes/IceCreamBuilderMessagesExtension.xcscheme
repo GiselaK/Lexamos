@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B55F96231CFF829D00B33E33"
-               BuildableName = "IceCreamBuilderMessagesExtension.appex"
-               BlueprintName = "IceCreamBuilderMessagesExtension"
-               ReferencedContainer = "container:IceCreamBuilder.xcodeproj">
+               BuildableName = "LexamosMessagesExtension.appex"
+               BlueprintName = "LexamosMessagesExtension"
+               ReferencedContainer = "container:Lexamos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,9 +31,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B52828A81CD1724C009CD776"
-               BuildableName = "IceCreamBuilder.app"
-               BlueprintName = "IceCreamBuilder"
-               ReferencedContainer = "container:IceCreamBuilder.xcodeproj">
+               BuildableName = "Lexamos.app"
+               BlueprintName = "Lexamos"
+               ReferencedContainer = "container:Lexamos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -63,18 +63,18 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B55F96231CFF829D00B33E33"
-            BuildableName = "IceCreamBuilderMessagesExtension.appex"
-            BlueprintName = "IceCreamBuilderMessagesExtension"
-            ReferencedContainer = "container:IceCreamBuilder.xcodeproj">
+            BuildableName = "LexamosMessagesExtension.appex"
+            BlueprintName = "LexamosMessagesExtension"
+            ReferencedContainer = "container:Lexamos.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B52828A81CD1724C009CD776"
-            BuildableName = "IceCreamBuilder.app"
-            BlueprintName = "IceCreamBuilder"
-            ReferencedContainer = "container:IceCreamBuilder.xcodeproj">
+            BuildableName = "Lexamos.app"
+            BlueprintName = "Lexamos"
+            ReferencedContainer = "container:Lexamos.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -90,9 +90,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B52828A81CD1724C009CD776"
-            BuildableName = "IceCreamBuilder.app"
-            BlueprintName = "IceCreamBuilder"
-            ReferencedContainer = "container:IceCreamBuilder.xcodeproj">
+            BuildableName = "Lexamos.app"
+            BlueprintName = "Lexamos"
+            ReferencedContainer = "container:Lexamos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

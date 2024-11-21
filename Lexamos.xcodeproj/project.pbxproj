@@ -10,8 +10,6 @@
 		7F9E74E12CED7E9500DA49E3 /* Klipy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E74E02CED7E9500DA49E3 /* Klipy.swift */; };
 		7F9E74E42CED846100DA49E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E74E32CED846100DA49E3 /* Kingfisher */; };
 		7F9E74F42CED92AE00DA49E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E74F32CED92AE00DA49E3 /* Kingfisher */; };
-		7F9E74FA2CED955700DA49E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E74F92CED955700DA49E3 /* Alamofire */; };
-		7F9E75022CEDA09500DA49E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F9E75012CEDA09500DA49E3 /* Alamofire */; };
 		7F9E75042CEDEDE100DA49E3 /* curriculum.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F9E75032CEDEDE100DA49E3 /* curriculum.json */; };
 		7F9E75052CEDEDE100DA49E3 /* curriculum.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F9E75032CEDEDE100DA49E3 /* curriculum.json */; };
 		7F9E750A2CEE060000DA49E3 /* spanish_curriculum.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F9E75092CEE060000DA49E3 /* spanish_curriculum.json */; };
@@ -51,7 +49,7 @@
 		B55F96281CFF829D00B33E33 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96271CFF829D00B33E33 /* MessagesViewController.swift */; };
 		B55F962B1CFF829D00B33E33 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55F96291CFF829D00B33E33 /* MainInterface.storyboard */; };
 		B55F962D1CFF829D00B33E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F962C1CFF829D00B33E33 /* Assets.xcassets */; };
-		B55F96311CFF829D00B33E33 /* IceCreamBuilderMessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B55F96241CFF829D00B33E33 /* IceCreamBuilderMessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B55F96311CFF829D00B33E33 /* LexamosMessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B55F96241CFF829D00B33E33 /* LexamosMessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B55F96411CFF82E100B33E33 /* BuildIceCreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96351CFF82E100B33E33 /* BuildIceCreamViewController.swift */; };
 		B55F96421CFF82E100B33E33 /* IceCream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96361CFF82E100B33E33 /* IceCream.swift */; };
 		B55F96431CFF82E100B33E33 /* IceCream+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F96371CFF82E100B33E33 /* IceCream+Image.swift */; };
@@ -132,7 +130,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B55F96311CFF829D00B33E33 /* IceCreamBuilderMessagesExtension.appex in Embed Foundation Extensions */,
+				B55F96311CFF829D00B33E33 /* LexamosMessagesExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +155,7 @@
 		7F9E75572CEEB33200DA49E3 /* openart-numbers-sticker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "openart-numbers-sticker.jpg"; path = "../../../../openart-numbers-sticker.jpg"; sourceTree = "<group>"; };
 		7F9E75582CEEB33200DA49E3 /* openart-shopping-sticker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "openart-shopping-sticker.jpg"; path = "../../../../openart-shopping-sticker.jpg"; sourceTree = "<group>"; };
 		99B09C10CF47ED1833322620 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		B52828A91CD1724C009CD776 /* IceCreamBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52828A91CD1724C009CD776 /* Lexamos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexamos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52828AC1CD1724C009CD776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52828AE1CD1724C009CD776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B52828B11CD1724C009CD776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,7 +163,7 @@
 		B52828B61CD1724C009CD776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B52828B81CD1724C009CD776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B52828C41CD17260009CD776 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		B55F96241CFF829D00B33E33 /* IceCreamBuilderMessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IceCreamBuilderMessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55F96241CFF829D00B33E33 /* LexamosMessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LexamosMessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55F96271CFF829D00B33E33 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		B55F962A1CFF829D00B33E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B55F962C1CFF829D00B33E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -230,8 +228,6 @@
 			files = (
 				7F9E74E42CED846100DA49E3 /* Kingfisher in Frameworks */,
 				7F9E750D2CEE0B4700DA49E3 /* Alamofire in Frameworks */,
-				7F9E75022CEDA09500DA49E3 /* Alamofire in Frameworks */,
-				7F9E74FA2CED955700DA49E3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,8 +303,8 @@
 		B52828AA1CD1724C009CD776 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B52828A91CD1724C009CD776 /* IceCreamBuilder.app */,
-				B55F96241CFF829D00B33E33 /* IceCreamBuilderMessagesExtension.appex */,
+				B52828A91CD1724C009CD776 /* Lexamos.app */,
+				B55F96241CFF829D00B33E33 /* LexamosMessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -433,9 +429,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B52828A81CD1724C009CD776 /* IceCreamBuilder */ = {
+		B52828A81CD1724C009CD776 /* Lexamos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B52828BB1CD1724C009CD776 /* Build configuration list for PBXNativeTarget "IceCreamBuilder" */;
+			buildConfigurationList = B52828BB1CD1724C009CD776 /* Build configuration list for PBXNativeTarget "Lexamos" */;
 			buildPhases = (
 				B52828A51CD1724C009CD776 /* Sources */,
 				B52828A61CD1724C009CD776 /* Frameworks */,
@@ -448,17 +444,17 @@
 			dependencies = (
 				B55F96301CFF829D00B33E33 /* PBXTargetDependency */,
 			);
-			name = IceCreamBuilder;
+			name = Lexamos;
 			packageProductDependencies = (
 				7F9E74F32CED92AE00DA49E3 /* Kingfisher */,
 			);
 			productName = IceCreamBuilder;
-			productReference = B52828A91CD1724C009CD776 /* IceCreamBuilder.app */;
+			productReference = B52828A91CD1724C009CD776 /* Lexamos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B55F96231CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */ = {
+		B55F96231CFF829D00B33E33 /* LexamosMessagesExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B55F96321CFF829D00B33E33 /* Build configuration list for PBXNativeTarget "IceCreamBuilderMessagesExtension" */;
+			buildConfigurationList = B55F96321CFF829D00B33E33 /* Build configuration list for PBXNativeTarget "LexamosMessagesExtension" */;
 			buildPhases = (
 				B55F96201CFF829D00B33E33 /* Sources */,
 				B55F96211CFF829D00B33E33 /* Frameworks */,
@@ -469,15 +465,13 @@
 			);
 			dependencies = (
 			);
-			name = IceCreamBuilderMessagesExtension;
+			name = LexamosMessagesExtension;
 			packageProductDependencies = (
 				7F9E74E32CED846100DA49E3 /* Kingfisher */,
-				7F9E74F92CED955700DA49E3 /* Alamofire */,
-				7F9E75012CEDA09500DA49E3 /* Alamofire */,
 				7F9E750C2CEE0B4700DA49E3 /* Alamofire */,
 			);
 			productName = IceCreamBuilderMessagesExtension;
-			productReference = B55F96241CFF829D00B33E33 /* IceCreamBuilderMessagesExtension.appex */;
+			productReference = B55F96241CFF829D00B33E33 /* LexamosMessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
@@ -504,7 +498,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B52828A41CD1724C009CD776 /* Build configuration list for PBXProject "IceCreamBuilder" */;
+			buildConfigurationList = B52828A41CD1724C009CD776 /* Build configuration list for PBXProject "Lexamos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -521,8 +515,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B52828A81CD1724C009CD776 /* IceCreamBuilder */,
-				B55F96231CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */,
+				B52828A81CD1724C009CD776 /* Lexamos */,
+				B55F96231CFF829D00B33E33 /* LexamosMessagesExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -644,7 +638,7 @@
 /* Begin PBXTargetDependency section */
 		B55F96301CFF829D00B33E33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B55F96231CFF829D00B33E33 /* IceCreamBuilderMessagesExtension */;
+			target = B55F96231CFF829D00B33E33 /* LexamosMessagesExtension */;
 			targetProxy = B55F962F1CFF829D00B33E33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -894,7 +888,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B52828A41CD1724C009CD776 /* Build configuration list for PBXProject "IceCreamBuilder" */ = {
+		B52828A41CD1724C009CD776 /* Build configuration list for PBXProject "Lexamos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B52828B91CD1724C009CD776 /* Debug */,
@@ -903,7 +897,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B52828BB1CD1724C009CD776 /* Build configuration list for PBXNativeTarget "IceCreamBuilder" */ = {
+		B52828BB1CD1724C009CD776 /* Build configuration list for PBXNativeTarget "Lexamos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B52828BC1CD1724C009CD776 /* Debug */,
@@ -912,7 +906,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B55F96321CFF829D00B33E33 /* Build configuration list for PBXNativeTarget "IceCreamBuilderMessagesExtension" */ = {
+		B55F96321CFF829D00B33E33 /* Build configuration list for PBXNativeTarget "LexamosMessagesExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B55F96331CFF829D00B33E33 /* Debug */,
@@ -952,14 +946,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7F9E74E22CED846100DA49E3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		7F9E74F92CED955700DA49E3 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Alamofire;
-		};
-		7F9E75012CEDA09500DA49E3 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Alamofire;
 		};
 		7F9E750C2CEE0B4700DA49E3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
