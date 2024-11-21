@@ -55,6 +55,20 @@ class IceCreamsViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
+    
+    private func navigateToMemoryScreen(for game: Game) {
+        // Instantiate the target view controller
+        let storyboard = UIStoryboard(name: "MainInterface", bundle: nil)
+        if let detailVC = storyboard.instantiateViewController(withIdentifier: "LessonsViewController") as? LessonsViewController {
+            
+            // Pass any data if needed
+//            detailVC.iceCream = selectedIceCream
+            
+            // Present the view controller
+            self.present(detailVC, animated: true, completion: nil)
+        }
+        
+    }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IceCreamCell.reuseIdentifier, for: indexPath) as! IceCreamCell
@@ -64,6 +78,9 @@ class IceCreamsViewController: UICollectionViewController {
         // Configure the cell
         cell.sticker.image = item.sticker
         cell.name.text = item.name
+        cell.selectGame = { [weak self] in
+            self?.navigateToMemoryScreen(for: item)
+        }
         
         return cell
         
@@ -100,7 +117,7 @@ class IceCreamsViewController: UICollectionViewController {
         cell.representedIceCream = iceCream
         
         // Use a placeholder sticker while we fetch the real one from the cache.
-        let cache = IceCreamStickerCache.cache
+//        let cache = IceCreamStickerCache.cache
 //        cell.stickerView.sticker = cache.placeholderSticker
 //        
 //        // Fetch the sticker for the ice cream from the cache.
@@ -115,15 +132,19 @@ class IceCreamsViewController: UICollectionViewController {
         return cell
     }
     
-    private func dequeueIceCreamAddCell(at indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: IceCreamAddCell.reuseIdentifier,
-                                                             for: indexPath) as? IceCreamAddCell
-            else { fatalError("Unable to dequeue a IceCreamAddCell") }
-        return cell
-    }
+//    private func dequeueIceCreamAddCell(at indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let cell = collectionView?.dequeueReusableCell(withReuseIdentifier: IceCreamAddCell.reuseIdentifier,
+//                                                             for: indexPath) as? IceCreamAddCell
+//            else { fatalError("Unable to dequeue a IceCreamAddCell") }
+//        return cell
+//    }
 }
 
 // A delegate protocol for the `IceCreamsViewController` class
+//private func navigateToMemoryScreen(for game: Game) {
+//    let detailViewController = IceCreamDetailViewController(iceCream: iceCream)
+//    navigationController?.pushViewController(detailViewController, animated: true)
+//}
 
 protocol IceCreamsViewControllerDelegate: AnyObject {
 
