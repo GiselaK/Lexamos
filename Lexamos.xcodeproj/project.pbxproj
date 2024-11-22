@@ -52,6 +52,7 @@
 		7F9E75122CEE148B00DA49E3 /* DeepLTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75112CEE148B00DA49E3 /* DeepLTranslate.swift */; };
 		7F9E75132CEE148B00DA49E3 /* DeepLTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75112CEE148B00DA49E3 /* DeepLTranslate.swift */; };
 		7F9E75162CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E75142CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift */; };
+		7F9EF5622CEFEFDD00156A97 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9EF5612CEFEFDD00156A97 /* Countdown.swift */; };
 		B52828AD1CD1724C009CD776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52828AC1CD1724C009CD776 /* AppDelegate.swift */; };
 		B52828AF1CD1724C009CD776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52828AE1CD1724C009CD776 /* ViewController.swift */; };
 		B52828B21CD1724C009CD776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52828B01CD1724C009CD776 /* Main.storyboard */; };
@@ -170,6 +171,7 @@
 		7F9E75092CEE060000DA49E3 /* spanish_curriculum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = spanish_curriculum.json; sourceTree = "<group>"; };
 		7F9E75112CEE148B00DA49E3 /* DeepLTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLTranslate.swift; sourceTree = "<group>"; };
 		7F9E75142CEE864B00DA49E3 /* IceCreamPartCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamPartCellDelegate.swift; sourceTree = "<group>"; };
+		7F9EF5612CEFEFDD00156A97 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		99B09C10CF47ED1833322620 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		B52828A91CD1724C009CD776 /* Lexamos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexamos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52828AC1CD1724C009CD776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				7F9E74E02CED7E9500DA49E3 /* Klipy.swift */,
 				7F9E75112CEE148B00DA49E3 /* DeepLTranslate.swift */,
+				7F9EF5612CEFEFDD00156A97 /* Countdown.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				7F462D6C2CEF2FF40034BBFF /* LessonCell.swift in Sources */,
 				B5B1E9F21D02717700BD5715 /* IceCreamStickerCache.swift in Sources */,
 				B55F964B1CFF82E100B33E33 /* IceCreamView.swift in Sources */,
+				7F9EF5622CEFEFDD00156A97 /* Countdown.swift in Sources */,
 				7F462D6F2CEF31140034BBFF /* LessonsViewController.swift in Sources */,
 				B55F96491CFF82E100B33E33 /* IceCreamPartCollectionViewLayout.swift in Sources */,
 				B55F964F1CFF9FB800B33E33 /* CompletedIceCreamViewController.swift in Sources */,

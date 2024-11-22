@@ -20,17 +20,34 @@ class FlashcardsGameViewController: UIViewController, IceCreamPartCellDelegate {
     static let storyboardIdentifier = "FlashcardsGameViewController"
     
     @IBOutlet weak var gifImageView: UIImageView!
+    @IBOutlet weak var countdown: UILabel!
     
     let klipyService = KlipyService()
+
+    private var counter: Int = 30
+
+
+    @objc func updateCounter() {
+        //example functionality
+        if counter > 0 {
+            print("\(counter) seconds to the end of the world")
+            countdown.text = "\(counter)"
+            if (counter <= 3) {
+                countdown.textColor = .red
+            }
+            counter -= 1
+            
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         game_round()
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
 
     
     public var lesson: Lesson?
-    private var counter: Int = 0
     private var prompt: String?
     private var es_curriculum: [String: [String]] = [
         "body_parts": [
